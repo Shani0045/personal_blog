@@ -1,0 +1,15 @@
+
+{% extends "index.html" %}
+{% load static %}
+
+{% block body %}
+{% include "components/profile.html" %}
+
+<div class="content">
+    {% include "components/navbar.html" %}
+    {% block content %} {% endblock %}
+    {% include "components/footer.html" %}
+</div>
+
+{% endblock %}
+
